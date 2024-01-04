@@ -21,7 +21,7 @@ app.use('/api/v1/', routes);
 
 const portNumber = process.env.PORT; 
 app.listen(portNumber, (err) => {
-    console.log("portNumber ", process.env.PORT);
+    console.log("portNumber ", process.env.PORT || 5000);
     if (err) {
         console.log(err);
     } else {
