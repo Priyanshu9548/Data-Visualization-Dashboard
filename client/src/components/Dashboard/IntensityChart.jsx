@@ -6,7 +6,7 @@ import { Heading } from '@chakra-ui/react';
 // import {URL} from '../constants.js'
 
 const IntensityChart = ({data}) => {
-  const limitedData = Array.isArray(data) ? data.slice(0, 80) : [];
+  const limitedData = Array.isArray(data) ? data.slice(0, 40) : [];
   // const intensityData = Array.isArray(data) ? data.map(item => item.intensity) : [];
   // const years = Array.isArray(data) ? data.map(item => item.start_year) : [];
   const intensityData = limitedData.map(item => item.intensity);
