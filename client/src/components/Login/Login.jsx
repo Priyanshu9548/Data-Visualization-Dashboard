@@ -14,15 +14,18 @@ import {
   AlertDialogOverlay,
 } from '@chakra-ui/react';
 
+import { useNavigate } from "react-router-dom";
+
 const LoginPage = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleLogin = (event) => {
     event.preventDefault();
     setIsOpen(true);
     setTimeout(() => {
       setIsOpen(false);
-      window.location.href = '/dashboard';
+      navigate('/dashboard');
     }, 2000);
   };
 
