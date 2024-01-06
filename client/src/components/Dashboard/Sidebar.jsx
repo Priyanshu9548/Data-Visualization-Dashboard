@@ -9,7 +9,7 @@ import {
   DrawerContent,
   IconButton,
   useDisclosure,
-  Select,
+  // Select,
   Divider,
   Text,
   Flex,
@@ -34,11 +34,11 @@ import {
 
 const AdminDashboard = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [selectedOption, setSelectedOption] = useState("");
+  // const [selectedOption, setSelectedOption] = useState("");
 
-  const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
-  };
+  // const handleOptionChange = (event) => {
+  //   setSelectedOption(event.target.value);
+  // };
 
   return (
     <Container>
